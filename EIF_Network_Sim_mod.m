@@ -115,13 +115,6 @@ k=k/(sum(k)*dt);
 re=conv(re,k,'same')*dt;
 ri=conv(ri,k,'same')*dt;
 
-%size(re)
-disp(mean(re(1001:end)))
-disp(length(Se))
-%disp(re)
-disp(mean(re))
-%disp(ri)
-
 %%
 subplot(2,3,1)
 plot(SxTimes,SxIndices,'k.','markersize',10)
