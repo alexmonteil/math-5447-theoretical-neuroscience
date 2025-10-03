@@ -82,7 +82,6 @@ SeTimes=SeTimes*dt;
 [SiIndices,SiTimes]=find(Si>0);
 SiTimes=SiTimes*dt;
 
-
 % Compute population-averaged rates across time
 re=mean(Se);
 ri=mean(Si);
@@ -98,9 +97,9 @@ avg_ri = mean(ri(1001:end));
 network_avg_rate = (avg_re * Ne + avg_ri * Ni) / (Ne + Ni);
 
 % Display results
-fprintf('Average E-rate: %.2f Hz\n', avg_re);
-fprintf('Average I-rate: %.2f Hz\n', avg_ri);
-fprintf('Overall network average rate: %.2f Hz\n', network_avg_rate);
+fprintf('Average E-rate: %.2f Hz\n', avg_re * 1000);
+fprintf('Average I-rate: %.2f Hz\n', avg_ri * 1000);
+fprintf('Overall network average rate: %.2f Hz\n', network_avg_rate * 1000);
 
 % Smooth the population-averaged rates
 sigma=6;
