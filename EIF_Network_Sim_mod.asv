@@ -34,10 +34,8 @@ pei=.2;
 pie=.2; 
 pii=.2;
 
-% External neurons to inhibitory neurons firing rate
+% External neuron firing rate for 
 rix=5/1000;
-
-% External neurons to excitatory neurons firing rate
 rex=5/1000;
 
 % EIF neuron parameters
