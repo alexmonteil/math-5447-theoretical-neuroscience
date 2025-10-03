@@ -98,8 +98,8 @@ avg_ri = mean(ri(1001:end));
 network_avg_rate = (avg_re * Ne + avg_ri * Ni) / (Ne + Ni);
 
 % Display results
-fprintf('Average E-rate: %.2f Hz\n', avg_Re);
-fprintf('Average I-rate: %.2f Hz\n', avg_Ri);
+fprintf('Average E-rate: %.2f Hz\n', avg_re);
+fprintf('Average I-rate: %.2f Hz\n', avg_ri);
 fprintf('Overall network average rate: %.2f Hz\n', network_avg_rate);
 
 % Smooth the population-averaged rates
